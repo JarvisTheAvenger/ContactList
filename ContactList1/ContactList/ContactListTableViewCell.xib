@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ContactListTableViewCell" rowHeight="148" id="KGk-i7-Jjw" customClass="ContactListTableViewCell" customModule="ContactList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="435" height="148"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="435" height="148"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DummyContact" translatesAutoresizingMaskIntoConstraints="NO" id="ai8-D3-UTr">
+                        <rect key="frame" x="8" y="39" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="EpU-Vm-WoP"/>
+                            <constraint firstAttribute="width" constant="70" id="KlL-MW-v1Z"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KtX-Vj-afR">
+                        <rect key="frame" x="98" y="26" width="297" height="95.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rahul" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVf-Ow-eRs">
+                                <rect key="frame" x="0.0" y="0.0" width="297" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9561056246" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQy-by-9TK">
+                                <rect key="frame" x="0.0" y="38.5" width="297" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pune" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KsP-uF-SKs">
+                                <rect key="frame" x="0.0" y="77" width="297" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="rVf-Ow-eRs" firstAttribute="leading" secondItem="KtX-Vj-afR" secondAttribute="leading" id="8O4-Bg-4rG"/>
+                            <constraint firstItem="KsP-uF-SKs" firstAttribute="leading" secondItem="KtX-Vj-afR" secondAttribute="leading" id="EP6-1Q-k6L"/>
+                            <constraint firstAttribute="trailing" secondItem="bQy-by-9TK" secondAttribute="trailing" id="EiB-xI-naj"/>
+                            <constraint firstAttribute="trailing" secondItem="KsP-uF-SKs" secondAttribute="trailing" id="PUh-ae-dzW"/>
+                            <constraint firstAttribute="trailing" secondItem="rVf-Ow-eRs" secondAttribute="trailing" id="YEE-Vw-JDK"/>
+                            <constraint firstItem="bQy-by-9TK" firstAttribute="leading" secondItem="KtX-Vj-afR" secondAttribute="leading" id="ZMG-jz-k9T"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="KtX-Vj-afR" secondAttribute="trailing" constant="40" id="2yO-TS-xvB"/>
+                    <constraint firstItem="ai8-D3-UTr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="TPw-6S-MUU"/>
+                    <constraint firstItem="KtX-Vj-afR" firstAttribute="leading" secondItem="ai8-D3-UTr" secondAttribute="trailing" constant="20" id="hu0-7H-7V7"/>
+                    <constraint firstItem="ai8-D3-UTr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pOW-O3-0jB"/>
+                    <constraint firstItem="KtX-Vj-afR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="r1R-ai-jRB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="KsP-uF-SKs" id="RoT-k9-Jtf"/>
+                <outlet property="contactImage" destination="ai8-D3-UTr" id="uwL-bD-rF7"/>
+                <outlet property="contactNumberLabel" destination="bQy-by-9TK" id="X3P-9r-lsm"/>
+                <outlet property="nameLabel" destination="rVf-Ow-eRs" id="24k-l3-Slp"/>
+            </connections>
+            <point key="canvasLocation" x="-103.5" y="-2"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="DummyContact" width="100" height="100"/>
+    </resources>
+</document>
